@@ -1,0 +1,10 @@
+https://dataexplorer.azure.com/clusters/help
+
+filter by condition
+StormEvents
+| where State == 'TEXAS' and EventType == 'Flood'
+| project StartTime, EndTime, State, EventType, DamageProperty
+
+
+
+
